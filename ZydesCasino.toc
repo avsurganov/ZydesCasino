@@ -1,0 +1,16 @@
+## Interface: 110000, 110002
+## Title: Zyde's Casino
+## Notes: A basic gambling addon for raids using the /roll system.
+## Author: Zydedh-Thrall
+## Version: 1.0
+## IconTexture: Interface\AddOns\ZydesCasino\media\logo.tga
+## SavedVariables: ZydesCasinoDB
+## X-Feedback: https://github.com/avsurganov/ZydesCasino/issues
+
+libs.xml
+
+state.lua
+main.lua
+ui.lua
+db.lua
+engine.lua

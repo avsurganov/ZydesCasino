@@ -251,8 +251,8 @@ function ZydeCasino:StartButtonClick()
 end
 
 function ZydeCasino:LastCallClick()
-    SendChatMessage("Yo, last chance! Type 1 to hop or -1 to drop!", self:GetChannel())
-    self.frame.startGameButton:SetText("Start Rolling!")
+    SendChatMessage("Zyde's Casino: Yo, last chance! Type 1 to hop or -1 to drop!", self:GetChannel())
+    self.frame.startGameButton:SetText("Zyde's Casino: Start Rolling, fam!")
 end
 
 function ZydeCasino:StartRollingClick()

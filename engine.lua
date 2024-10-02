@@ -17,7 +17,7 @@ function ZydeCasino:OnChatMessage(event, msg, player)
             local addonPlayer, _ = UnitName("player")
             if playerName ~= addonPlayer and not self.isWildin[playerName] then
                 self.isWildin[playerName] = true
-                SendChatMessage(playerName .. " out here wildin', can't even tell 1 from -1. Big clown energy, fr.", self:GetChannel())
+                SendChatMessage("Zyde's Casino: " .. playerName .. " out here wildin', can't even tell 1 from -1. Big clown energy, fr.", self:GetChannel())
             end
         end
     end
@@ -44,7 +44,7 @@ function ZydeCasino:UpdatePlayerRollCount()
         local winnings = maxRoll - minRoll
         self:PersistResults(maxPlayer, minPlayer, winnings)
         self.frame.playerCountLabel:SetText(maxPlayer .. " wins " .. winnings .. "!")
-        SendChatMessage(maxPlayer .. " just finessed " .. winnings .. " off " .. minPlayer .. ". Pay up now, don’t be giving broke vibes fr!", self:GetChannel())
+        SendChatMessage("Zyde's Casino: " .. maxPlayer .. " just finessed " .. winnings .. " off " .. minPlayer .. ". Pay up now, don’t be giving broke vibes fr!", self:GetChannel())
         self:ResetGame(false)
     end
 end
